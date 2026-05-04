@@ -19,7 +19,7 @@
             <h1>Venda fácil seu carro</h1>
             <p>Descreva as caracteristicas dos seu carro e marque os opcionais que ele possui</p>
             <form onsubmit="salvarCarros(event)">
-                <div class="caixaInput">
+                <div class="ciaxaInpus">
                     <label for="title">Titulo do Anuncio <span class="campo-obrigatorio">*</span></label>
                     <input type="text" name="title" id="title" class="block" placeholder="Um titulo para anunciar seu carro">
                 </div>
@@ -84,8 +84,8 @@
                     </ul>
                 </div>
 
-                 <div>
-                    <ul>
+                 <div class="caixaOpcional">
+                    <ul class="listaOpcionais">
                         <li>
                             <input type="checkbox" name="opcional[]" id="assistentePista" value="assistentePista">
                             <label for="assistentePista">Assistente Pista</label>
@@ -103,12 +103,13 @@
                             <label for="bancoDeCouro">Banco de Couro</label>
                         </li>
                     </ul>
-                </div>sdex2z
+                </div>
                 <div class="caixaOpcional">
                     <p>Fotos do carro <span class="campo-obrigatorio">*</span></p>
                     <input type="file" name="imagem" id="imagem" multiple accept="image/png, image/jpg">
                 </div>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Envia"
+                class="btn-submit">
             </form>
             <hr>
             <h2>Carros Cadastrados</h2>
